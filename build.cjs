@@ -140,20 +140,20 @@ function build() {
     $schema: './schema.json',
     version: '1.2',
     lastUpdated: new Date().toISOString(),
-    app: existing.app || {
+    app: {
       name: 'سروستان',
-      latestVersion: '1.2.0',
-      latestVersionCode: 12,
-      codename: 'پاسارگاد',
+      latestVersion: '2.0.0',
+      latestVersionCode: 20,
+      codename: 'تهران',
       telegramChannel: 'https://t.me/s4rvest4n',
     },
     channels: CHANNELS,
-    banner: existing.banner || {
+    banner: {
       enabled: true,
-      id: 'banner-v120',
+      id: 'banner-v200',
       type: 'info',
-      title: 'نسخه ۱.۲ (پاسارگاد) هم‌اکنون در دسترس است',
-      message: 'ویجت‌های تعاملی، چارت درسی هوشمند و پوسته پاییزی چغندر به سروستان اضافه شد.',
+      title: 'نسخه ۲ (تهران) هم‌اکنون در دسترس است',
+      message: 'نگارش جدید سروستان با ویجت‌های تعاملی، چارت درسی هوشمند و امکانات بهینه‌شده منتشر شد.',
       actionText: 'عضویت در کانال تلگرام',
       actionUrl: 'https://t.me/s4rvest4n',
     },
