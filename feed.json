@@ -1,7 +1,7 @@
 {
   "$schema": "./schema.json",
   "version": "1.2",
-  "lastUpdated": "2026-10-15T12:35:51.713Z",
+  "lastUpdated": "2026-10-15T12:36:17.433Z",
   "app": {
     "name": "سروستان",
     "latestVersion": "2.0.0",
@@ -53,7 +53,7 @@
       "channelId": "shernameh",
       "title": "ای یار جفا کردهٔ پیوند بریده",
       "date": "۲۴ مهر ۱۴۰۵",
-      "timestamp": 1792067751711,
+      "timestamp": 1792067777433,
       "badge": "سعدی",
       "color": "secondary",
       "summary": "ای یار جفا کردهٔ پیوند بریده / این بود وفاداری و عهد تو ندیده؟",
@@ -66,7 +66,7 @@
       "channelId": "shernameh",
       "title": "ببُر به نام خداوندت",
       "date": "۲۴ مهر ۱۴۰۵",
-      "timestamp": 1792067751711,
+      "timestamp": 1792067777433,
       "badge": "حسین صفا",
       "color": "secondary",
       "summary": "ببُر به نام خداوندت / که لطف خنجر ابراهیم به تیز بودن احکام است",
