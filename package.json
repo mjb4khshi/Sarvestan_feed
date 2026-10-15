@@ -1,0 +1,9 @@
+{
+  "name": "sarvestan-feed",
+  "version": "1.2.0",
+  "description": "Feed and Newsletter repository for Sarvestan",
+  "private": true,
+  "scripts": {
+    "build": "node build.cjs"
+  }
+}

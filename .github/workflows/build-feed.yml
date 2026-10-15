@@ -1,0 +1,42 @@
+name: Build and Publish Feed
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'posts/**'
+      - 'build.cjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build feed.json from markdown posts
+        run: node build.cjs
+
+      - name: Commit and push updated feed.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add feed.json
+          if git diff --staged --quiet; then
+            echo "No changes in feed.json to commit."
+          else
+            git commit -m "chore(feed): auto-build feed.json from markdown posts [skip ci]"
+            git push origin main
+          fi
